@@ -14,12 +14,12 @@ docker run -d --restart=always --name bacula-fd \
         -v /:/mnt:ro \
         -e FD_PASSWORD='bacula-fd password' \
         -e FD_NAME=$(hostname) \
-        martmaiste/bacula-fd
+        ggty/bacula-fd
 ```
 
 Or build it locally:
 ```
-git clone https://github.com/martmaiste/bacula-fd.git
+git clone https://github.com/GGTY81/bacula-fd.git
 docker build -t bacula-fd bacula-fd
 ```
 
